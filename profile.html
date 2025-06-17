@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YSHIVAM RAJ - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-teal-600">SHIVAM RAJ</h1>
+      <div class="hidden md:flex space-x-6">
+        <a href="#about" class="hover:text-teal-600">About</a>
+        <a href="#skills" class="hover:text-teal-600">Skills</a>
+        <a href="#projects" class="hover:text-teal-600">Projects</a>
+        <a href="#contact" class="hover:text-teal-600">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center bg-teal-600 text-white px-4">
+    <h2 class="text-4xl font-bold mb-4">Hi, I'm SHIVAM RAJ</h2>
+    <p class="text-xl mb-6">A Passionate Web Developer and Designer</p>
+    <a href="#contact" class="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-100">Get in Touch</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-6 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <div class="flex justify-center">
+      <img src="\image to add (1).jpeg" alt="Profile Picture"
+           class="rounded-full w-64 sm:w-48 md:w-56 lg:w-64 xl:w-72 shadow-lg border-4 border-teal-600 h-auto object-cover" />
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold text-teal-600 mb-6">About Me</h2>
+      <p class="text-lg text-gray-700 mb-4">
+        I'm a detail-oriented web developer with a passion for building clean, accessible, and responsive web applications.
+        Whether crafting intuitive user interfaces or optimizing backend logic, I love turning ideas into real-world experiences.
+      </p>
+      <p class="text-lg text-gray-700">
+        Outside of coding, I enjoy exploring hiking trails and trying out new recipes in the kitchen!
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="bg-white py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-teal-600 mb-12">What I Do</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-lg shadow hover:shadow-lg bg-gray-50">
+          <h3 class="text-xl font-semibold mb-2">Frontend Development</h3>
+          <p>I build user-friendly UIs with React, Tailwind, and modern web tools.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow hover:shadow-lg bg-gray-50">
+          <h3 class="text-xl font-semibold mb-2">Backend Development</h3>
+          <p>RESTful APIs, Node.js, and databases to power robust platforms.</p>
+        </div>
+        <div class="p-6 rounded-lg shadow hover:shadow-lg bg-gray-50">
+          <h3 class="text-xl font-semibold mb-2">UI/UX Design</h3>
+          <p>Clean, accessible interfaces guided by empathy and Figma mockups.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-6 bg-gray-100">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-teal-600 mb-12 text-center">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white p-4 rounded shadow">
+          <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAywMBIgACEQEDEQH/xAAbAAABBQEBAAAAAAAAAAAAAAADAQIEBQYAB//EAEEQAAIBAwEFBAgFAgIKAwAAAAECAwAEEQUGEiExQRNRYXEUIjJSgZGhsTNCcsHRB2IjQxUkY2SCkqKy4fAWJTT/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIEAwX/xAAjEQEBAQACAgMAAgMBAAAAAAAAAQIDERIhBDFRQWETIjIU/9oADAMBAAIRAxEAPwDz3K44ZrhimrTwpqA5SvUU7K44ZplKvHgKgPBogK9c0wIfD50vI0D8inqR1oajNPAOKAgK91OGOlDFPUE8qAi08EdBQhwp4NAQGiKR1FCAPSnjI50BgRTlNCWiAGgOrDrTww6VHBogNAcGiK1RxRFNBIVqerUBTTwaCQrUQNUUNRQaCSrU7eqOGp29QecDwpa7eJ5gDyrs1IcKcDSBqdvEjkB5VAUeQpwIFMBp4YjoKkOFOHhTM04cKB4Jp4pgYUoOakEFPBNDBp+8e4VAID308eFBBoitQFU09TQs05TQGBp4NCDU4NUAwang0AGiBqA6tTw1Rw1PDUEhTTw1Rw1PDUEgNTs0ANTt+gwAogx72PhQ8Hurs1IOsbuMojMO8DNSYdNv5ThLK5b9MTU3TNRmsriJ1lkSJWy257QHUjxrS3mm7UT3Mptrq4ksixMVw94sSMp4g+swPKoc7eTv1FVHs3rMg9XT58f3Lu/eiDZnUl/GFrCP9rdRj96MNn7uWcQ3WvaUkpJHZm9MrZHEjCg91OtdA0aSUo20cUjBWci3spDkAZOC2B0ojx5f1WXtilk8Ub31nNLIT/hwSb+PMjhRNLs4rqdkuJJEVBk7iZbnjrVpDb7K2sXpq3WsXHYSoo3Iki9ZgzKeOeHqH6Vc3kNkuvi8tI3j9PgFwqcNzdPDOehyMkcuNU5LZm2O3Fm+X+3tGtNL2cjYPNJdSY/LMmR/0sDWhsdB2a1gOtnZK7RAb260kWM8uvhVBqaBZ+A6Z6ftWh/p5/8Aovx/bGfq1efd77+2+Yz19BWWxWj3r3UfZ3Fu9vKYm7OcsCcA8MivOnAWRkycKSM17TofDUdZHP8A1vPzUV4vMD28nD8zfetfx9W99svLJOuijHvfSnA9xzQQaeuTyBrS4jKaeMe99KCM91OBoCg09T44oQzTgaAwx71KDQgaeM91AZSO/FOz45oOacD50BgaIGHvVHBPdSg8KCQGp+/UcGncaDFbx7z8aTPfSCnjHuNQKrEdcVqrR7m50vT7m31NLJ4i9u/aPudoRhlwOROCRz44POsqFY+yrfKrrRLcXenX9hMyx5WO4jaTOAUOGPD+1moNBdX9rZXnpOoRJOFCSxv6Dhhyz6+8M8ePl0oelR6Db6hJcyLfRiCaSIIJgyNjKn8ucY4/EcahG1uoYIPRpJ5AEKM0OGjGOROCQOY5ii2s3axt2tvGzZVyxO6WyME+rjuHPNc+TVznuL4zNa6rSWNhs8IpYrG0tpRLjKzXDszYOQcSEA9eQpurNbslrH6HNBLbx9lGXiEa9nnOBgAd3KqmGS0Ea9qsig8MNhwMHPMY+1So7idbzFjc7qNGTuLJjjjI9U1kurqfbTnMzfURZV/9Fab+npAu74d8aH6ms9PfyY/1u0gkJyCWQow8eGK0+yN9GJ5bay0uFJeyRnlaRnLBsHGPDNcZmfrtdf0utFONV1of70v/AGLXmbbNz3ksraf6W5yWKy2jqO/2gCK9QtjqD3N2s0a26LKAjLEI+0G6OOTz6isTq8jXF9cpf35kVQyhEmdiOGOI9n7Vr4Z1ay8v1GJuIJLW4kgmAEkZwwDA4PwpBnpmrh4oBNJiPgXJBPXjT0SIckFaWdTqJD0PyoiwynlG3yq5TcH5R8qMrL3UFMltcH2YzRVsblvyVcq4oiyCpFQmmXB6UdNKnJ4sMVZiWnCQVHYgLpDfmkNFTSF6ympokHfTu1HvVIirpUXV2Pxoi6bbg8jRhMufapRLnkp+VAxbK3X8tP8ARoPcp6hmIwjcfA1KFjMRnH0qB5buJ3LSjHcKDveNODjvFBITHfVjo0gXU7dWYbkrdi2e5/V/eqYSDvFPWT3Sf+E8aC8jhuVhZYHieWCUH1JfWXoR064qZDLexyPHeKTzAE8fFuo58T0qRLYwXJm1ArMvpSrIxaEmIFsEjIJPPPQUWCB4o0FncQqh/wAiGXmPJsZrnye82R0471qWozm3kicSQFMENmF/hybzHUU6C3ga9t2W5XBQruyIVJ592R3dakxw6k5kEmmrIpUjexjOOPNBgfOutYEaaA+izRNE5yIZBKByPEHB699ZP8epGn/JkIQ3iRlbVnbnkRHf4Y7hWq2SGq+kntfSlsvR03CRuJvYXODw8azVxZKN+MtuENkdohUjnV5svbQx6n28l1E7taqOyQMzDgnPhj69a5+/5X9fw0VnEsepaiTLGxeRDgNvEer17qwt88SXNy+JrjgDllVVXLLwDDJPPwrZW88SarfdhbXMjsEJOAV4A55cviaymozadpskpvJLS1kk4dlE4aQjxxk9OVauGWM/LfTM9qCxweGT1p6y55Gp8epbPgEpA5x39addbQadBBvWWldqc4JJAFaIzoas3RT8qNGk7HCwuT5V3/zLsd0mwjiU8MnjRhtVfXMZS2aCLI4SEZqaCx2N8+MQMPPhUlNI1Buaqvmap5NZ1yJQHmV2I4bq+1QJtoL0oI7957dXOOOQD5VA08eiXR/EmjWiPpEUKF7m9RVHM5xWaht9633or2TjyDuc0CVLq3iYyTw3IXj2Zb1qDWRwaRwzfq/kwp88uiWkYcM8p7l41mrFrSSAmaHs2I4qo5VGuHsbRD2MtwjkZBA9X40GvTVdIVQ3YPjxWmNtFAZQLOzR1xzJANUGlaiJISkksMrdTjnS3izSho7exiYe8vAnyqYNK+vzRp6lkp78HlUJtc1IklWKjovZ8qprS+bT+yt7yGaLe9nPGpjSSuxYXQUHpvjhQVEuzNhZxdrdX6IvDiXoAXZuH2rrtCPcQmqH0oXcBhlj32RfUPEYqfsjoUGuQXDztKrQyBN1eoxnrVd6mJ5VbGLu9RaPcbP228Wtpn3MZwq9fjUybUdHtbb0iCzkZQMgtjifdHj9qrdp9It9HisikQMLPiZiPXOMHgfLNaWPZm0EUaiENGgwo3iOB4n5/wAd1cNfJxJL+us4Nd9Mpb7VdgVc2sYIORLvEFB3L3VpNIv9T1WNnj06REOdy87DETD+/P3HHwNZefUb+x1CWDStOs7TspDH2sNnvzZzj25N7u5jFQxtBdSyv6XqN1K78zdSGT4DePD4Vokjl7a2dNYmuopG1TTbSJ/w17TDPjqrYxj41nl2o1cSSI9722HIKyhZADnpkGolntBbW1t6CI0nR5j2tvMMhh0I7j4ipiaXpmrSS3emzPFIq7z2m4C69+Me0PEfHFOv1HtbW20l5JbtIUtpHVsyoN6LJ8MHj5VPh2i1C902Z9Is7O21FRht+AMZE6AE/Dp08awRuBC5BkzjI9nFBiv7y0uBcwzO6q2c54r5jup4f0eVa+1G0+0ab9w800aEgxTTAIMf2DgPlUpdlkk3fS510914bske8p8m5fWoi797pq6/ZF4SColMbY4twHLxH1FSW17U47dZvTGZlRhiRQQcd4rJycvLL1GrHHjU7oGp7E6nZxNcWM63DHiFjAwfhmovoOq6XbC6vbGVU5MSuVH8Vqtl7+bWkgF3cXCzSQiTMThE5DPIZHPvrSrollkdrAk5HIzkykf82arn5W56qdfHzfceQz6jFGwf0ETqxO8M8vhQLa4tproy2/8Ah55xL+X4V6F/UGKy0PR1v7aCK3ne4VGkSMciGPL4DjWAtGtbqdrmbeeVsbrxAZPn8K2ce/Ods28+N6WZa5LlbVmKEcCQARUW8TVYIA91NFdRryjZxv8AypJrOSZXji7YwnkZcIfvUKe0vbCPtI54LiMf5RcFx8auot7O9SS2xKqx7wwcrkigTf6ES43LmSfteYKjdz5Gls75nt1jmJjU80EQZseNc76alvIWt57gqPwyQCfhUBbF5IZjuy9pCx9RX5geJqwubm5tkIhtbcsDnLcQR51m4ZLJ77fsnlgXrbO3XyNaK1nkaHeW7tYB3MvEfSpFbcXge4W6vrR4GTh2qrhB8aull9NgBtJpSrLxJYAZqov5766kKR3ZdTw7FhvRt8v4oS3kmn7n+k9OkjjPAMASjfuPlQWUlncQr2j6lAq55TtvY8M02PUb0IAdPRsfmVxg0fNpfQJuR28UbDq+d7xIph0fTSeMiD9KyYqBiIZ92UGQyFPzBWwTW5/p1PAF1BEjdWBRmJPPO9/FefKQGG8u8M1q9hX7C51Acg6RsuOoBbP3rj8qd8VduC9ckbDamwl1izhtrYoGWbLO3JRukE+PMVeQyARIrMCQoGceFZXVtXfT7Fp4oxIwYDdJxzOKnWGoek28M/siRFbHPGRmvKs34z8ejnxmr+odtoC3Or3dzqGq9jF6U0kVvv5682HTyFaiOBN0Il9p5QDAXsAAB3YzWcnfNzMT1fNIGrprk1pzzjMaZtOilOXXSJv1wj+a5dGhWRJU0vRTIhyjhN0qe8HBxWeU0VT0GcedU89Rfwi0vNmbS7maa52f0qWRvacSEE/9NR02T02Jww2ZtmbkAJlcf8r8KjrI45O2P1VZbPySNrNsvaMVJOVJJ6GrTk1+q3EZD+oV9d6WNOttOnmihv4C0sUrb27x5DOd3HTHLpVBa36uIkyDGqHeJ4/HjzrS/wBZrSWTWNHFvC5C28gAVeXrDurz6WC9031hERHKMBZP261vzjz44x3fhuvUdjJA2qRMnsmFt0jqOFbxQcbzAgV5H/TfW7W21O0S6d0EMO6QUJzjHLHOvR9S2styiiG0uJAp4M4CA8PE5+lZbx3NrR5y9dKj+p90LfZyPgCst0qNlQcgq1eX2kUKZwrJGesIH2rb7Ya0NR01YbqxheESBt0yMehHTHfWChhS3kLwF1U/kZt4D51t+P6wy8//AGsZd0TqbGSeUbozlOIbrQF0TUN5pbMSISclZThD8TypRcTn/NfHg1N32Y8WY+JNd3ETTb29tpwGjktpRkF8bysPrwqfPcR3UnaXc8kjf2RKKrc954eJoiJI/sox8hQSp4tMnj3HtJJGxgMzgFfLAqPZRNaZCSPIOgmAbHlRFt5TwO4h/ucAj4c/pUuDTZZcY338EiJ+pxQcuoXYXCTsi9yer9qQySy8ZWd/FjmrO32euHwTbSY/2kgX7Z+9WMGz5T2zbRnyMh+pIoKGEZwqgnuAFWaW824P8NvlV3FpMKjElxO491TuD5LipA0ywx+B8zUDxd1DAgoB5cPtU3S7lrIYtd8SMu7wwfvmhYUuwbIIOD3ZosagEFCAe8v/ABUbnc6q2ft13fX11bmOeZpFJzgjd+wFBaS5khRVuZk3QAAshwKlEEDiU+WfvTmshdxFjLJvpx3AQoP0qkzF7qtfsPAL3SgL1nMiNgtvc+J/gVZ6jBFayoIWyrISSePHOKwdjf3USlba7eEdUU8jRptX1PI3rxnxy3lB/as2/j2307Y5ZPtrw3fRFbArGJrmojnJCf1J/wCaMmv3w5rbN4AN/NcL8bbtOfDYiQVZ7Ot/93aY979jXnc20OpQr2h00PGeTBiP2q00HbAJcw3K2jl0OdwEkg4PTFP/ADck99F5sVN/qfd9tNp6JKzvEkiyYY++cD5CsG5zzXl7xNae/ivNTO96HPneZ95huk7xyefnQItnpm9uJF/U5J+Qrfxzxx1WPksuu1NaWfprjcuHgnTjFICcA+NXFttDc2jiy12PdlHs3A5P8uFXOnaBvPhZ4owBxKRgfU5NWbbPWboFu83PD/NANTrMv2TXX0zGrXkFxAFilRgTw9bh86qY7aST2FLHuVC37Yr0K30nTbRQsFlGoHh/FSQFQYSNF8lqcSSdK7vd7YO20W9nxi0lI7zgfyasodl7liO0SGP9bk/YitSWdubH50nGr9qqe32aij/FuvhCij9s/WpsWi6cg9eOSX9b5H1zUwZHWlqEEit7WEARWsS45cM/ejdo3TA8hihinUD94nnx86UU0U4VIItFHKhLRRyoPFBypyHBq9h2cvn4ytHH4A5qbDszGv4twx8FUClTGcXex7Jo9qJFlXBUZ4eu1aqHRbKL8jP+tqlx20EQ/wAOJF/4c1XqLd1jrzSboSekWcLOrDiq0WLRb6YAtAUz77YrY5xSZohm4dnJR+LLGv6V3vvU6HQ4E9uWVv0nd+1WtdRKNDYwQ/hp8Sc1KtYljk3lUAnuFcONEQ4qKmJEjZFRmHGiluFDY1ELSRyNG4ZedWEM6zDHJuoqrJrt8qQRzFW6R2tjTKjwXe/wk9rvqTmnStpKSuNdVkOpaSloFp1JSigcKeKaKcKIEWn0wU+gozSV1dULGmkrq6oS4ikpK6pDsUhFdXUHCiLS11Qkppjc66uqIU0ihtXV1WVM5tU2zkZhgnhXV1TEJRrhXV1A7FJXV1A+uFLXUQctOFdXUBBTq6uqUv/Z" alt="Project" class="rounded mb-4 w-full">
+          <h3 class="text-xl font-semibold mb-2">E-Commerce Dashboard</h3>
+          <p class="text-gray-600 mb-2">A full-featured admin dashboard with real-time analytics and responsive layout.</p>
+          <a href="#" class="text-teal-600 font-medium hover:underline">View Project</a>
+        </div>
+        <!-- Add more project cards as needed -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-white py-16 px-6">
+    <div class="max-w-xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-teal-600 mb-6">let's contact me</h2>
+      <p class="mb-6 text-gray-700">Have a project in mind or want to chat? Email me at:</p>
+      <a href="mailto:you@example.com" class="bg-teal-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-teal-700">shivamraj34865@gmail.com</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p>&copy; 2025 shivam raj. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
